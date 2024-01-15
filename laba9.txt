@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{   setlocale(0, "");
+	char circle;
+	cout << "\x1b[92mВведите y, чтобы начать программу;) \n\x1b[91mили n, чтобы закрыть это нафик:(\n\x1b[00m";
+	cin >> circle;
+	if (circle == 'n') {
+		system("cls");
+	}
+	while (circle == 'y') {
+	
+	
+	int digit;
+	cout << "\x1b[96mВведите число от 1 до 15!\x1b[00m \n";
+	cin >> digit;
+	int x = 1;
+
+	if (digit < 0 || digit > 15) {
+		cout << "\x1b[91mОШИБКАААА!\x1b[00m \n";
+	}
+	else if (digit == 0) {
+		system("cls");
+	}
+	else
+	while (x <= digit) {
+		cout << "\x1b[93mЦикл отработал. \x1b[94mКруг " << x << ". \n" ;
+		x++;
+	}
+	cout << "\x1b[92mВведите y, чтобы продолжить программу;) \n\x1b[91mили n, чтобы прекратить этот круг нафик:(\n\x1b[00m";
+	cin >> circle;
+
+	
+	
+	
+	}
+	int _; cin >> _;
+}
